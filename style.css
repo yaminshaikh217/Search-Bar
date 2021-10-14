@@ -1,0 +1,116 @@
+html {
+  font-size: 62.7%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Input Styling******* */
+#input {
+  position: relative;
+  height: 4rem;
+  width: 0rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  border: 0;
+  margin-right: 0.5rem;
+  transition: all 0.4s linear;
+  color: #ff7979;
+  font-weight: 800;
+}
+
+#input.active {
+  width: 18rem;
+}
+
+#input::placeholder {
+  color: #ff7979;
+}
+
+/* button styling************** */
+
+.box {
+  margin: 7rem 0;
+}
+
+#btn {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.fa {
+  text-align: center;
+}
+
+#btn:focus {
+  outline: none;
+}
+
+#btn:hover {
+  color: #ff7979;
+}
+
+/* ******Button 2  ******** */
+
+.btn2 {
+  position: relative;
+  background: #ff7979;
+  padding: 1.8rem;
+  width: 8rem;
+  height: 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  top: -5px;
+  left: -5px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transition: all 0.3s linear;
+  z-index: -10;
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  bottom: -5px;
+  right: -5px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transition: all 0.3s linear;
+  z-index: -10;
+}
+
+.btn2:hover:before {
+  height: 100%;
+  width: 100%;
+}
+.btn2:hover::after {
+  height: 100%;
+  width: 100%;
+}
